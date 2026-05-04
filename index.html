@@ -1,0 +1,339 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PT X</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="scroll-story" id="scrollStory">
+      <div class="sticky-stage">
+        <canvas class="sequence-frame" id="sequenceFrame" aria-hidden="true"></canvas>
+        <div class="frame-vignette" aria-hidden="true"></div>
+
+        <header class="site-header">
+          <a class="pt-mark" href="#" aria-label="Positive Technologies">
+            <img src="./assets/pt-logo.svg" alt="Positive Technologies" />
+          </a>
+          <nav class="main-nav" aria-label="Главное меню">
+            <a href="#">Продукты</a>
+            <a href="#">Сервисы</a>
+            <a href="#">Технологии</a>
+            <a href="#">Исследования</a>
+            <a href="#">Мероприятия</a>
+            <a href="#">Партнеры</a>
+            <a href="#">О нас</a>
+          </nav>
+          <div class="header-tools" aria-label="Быстрые действия">
+            <button class="language-button" type="button" aria-label="Язык">
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M12 21a9 9 0 1 0 0-18 9 9 0 0 0 0 18Z" />
+                <path d="M3.6 9h16.8M3.6 15h16.8M12 3c2.1 2.2 3.2 5.2 3.2 9S14.1 18.8 12 21M12 3C9.9 5.2 8.8 8.2 8.8 12S9.9 18.8 12 21" />
+              </svg>
+              <span>Ру</span>
+            </button>
+            <button type="button" aria-label="Поиск">
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="m21 21-4.3-4.3" />
+                <circle cx="11" cy="11" r="7" />
+              </svg>
+            </button>
+            <button type="button" aria-label="Поддержка">
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M4 13a8 8 0 0 1 16 0" />
+                <path d="M5 13v3a2 2 0 0 0 2 2h1v-7H7a2 2 0 0 0-2 2ZM19 13v3a2 2 0 0 1-2 2h-1v-7h1a2 2 0 0 1 2 2Z" />
+              </svg>
+            </button>
+            <button type="button" aria-label="Уведомления">
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M12 4 3.8 19h16.4L12 4Z" />
+                <path d="M12 9v4M12 17h.01" />
+              </svg>
+            </button>
+          </div>
+        </header>
+
+        <div class="product-bar" id="productBar">
+          <div class="product-bar-inner">
+            <a class="product-lockup" href="#overview" aria-label="PT X">
+              <img class="product-icon" src="./assets/PT-X.svg" alt="" aria-hidden="true" />
+              <span>PT X</span>
+            </a>
+            <nav class="product-anchor-links" aria-label="Навигация по продукту">
+              <a class="is-active" href="#overview">Обзор</a>
+              <a href="#protection">Защита</a>
+              <a href="#launch">Внедрение</a>
+              <a href="#experts">Эксперты</a>
+            </nav>
+            <div class="product-actions">
+              <a class="secondary-action" href="#">
+                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M20 21a8 8 0 0 0-16 0" />
+                  <circle cx="12" cy="8" r="4" />
+                </svg>
+                <span>В личный кабинет</span>
+              </a>
+              <a class="primary-action small" href="#">Бесплатный пилот</a>
+            </div>
+          </div>
+        </div>
+
+        <section class="hero-block" id="overview" aria-labelledby="heroTitle">
+          <div class="hero-copy">
+            <h1 id="heroTitle">PT X</h1>
+            <p>Начните с экспертной защиты — без найма сотрудников и покупки продуктов для ИБ</p>
+            <div class="cta-row">
+              <a class="primary-action" href="#">Бесплатный пилот</a>
+              <a class="dark-action" href="#">
+                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M12 3v12" />
+                  <path d="m7 10 5 5 5-5" />
+                  <path d="M5 21h14" />
+                </svg>
+                <span>Скачать презентацию</span>
+              </a>
+            </div>
+          </div>
+        </section>
+
+        <section class="benefits-block" aria-labelledby="benefitsTitle">
+          <div class="benefits-copy" id="benefitsCopy">
+            <h2 class="reveal-item" id="benefitsTitle">PT X — одно решение,<br />вся защита для бизнеса</h2>
+            <article class="benefit-item reveal-item" id="protection">
+              <span class="benefit-icon" aria-hidden="true">
+                <img src="./assets/block2-icon1.svg" alt="" />
+              </span>
+              <div>
+                <h3>Защита от широкого спектра атак</h3>
+                <p>Защитит от шифровальщиков, ВПО и уязвимостей — через несколько часов после внедрения.</p>
+              </div>
+            </article>
+            <article class="benefit-item reveal-item" id="launch">
+              <span class="benefit-icon" aria-hidden="true">
+                <img src="./assets/block2-icon2.svg" alt="" />
+              </span>
+              <div>
+                <h3>Быстрое внедрение и результат</h3>
+                <p>Достаточно установить агенты на конечные устройства. Без долгих внедрений и выделенных ресурсов.</p>
+              </div>
+            </article>
+            <article class="benefit-item reveal-item" id="experts">
+              <span class="benefit-icon" aria-hidden="true">
+                <img src="./assets/block2-icon3.svg" alt="" />
+              </span>
+              <div>
+                <h3>Топ-команда экспертов PT ESC</h3>
+                <p>За плечами более 1000 реальных атак. При сложных инцидентах эксперты подключаются и помогают остановить атаку.</p>
+              </div>
+            </article>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <section class="mobile-benefits-flow" aria-labelledby="mobileBenefitsTitle">
+      <div class="mobile-benefits-copy">
+        <h2 class="mobile-reveal-item" id="mobileBenefitsTitle">PT X — одно решение,<br />вся защита для бизнеса</h2>
+        <article class="benefit-item mobile-reveal-item">
+          <span class="benefit-icon" aria-hidden="true">
+            <img src="./assets/block2-icon1.svg" alt="" />
+          </span>
+          <div>
+            <h3>Защита от широкого спектра атак</h3>
+            <p>Защитит от шифровальщиков, ВПО и уязвимостей — через несколько часов после внедрения.</p>
+          </div>
+        </article>
+        <article class="benefit-item mobile-reveal-item">
+          <span class="benefit-icon" aria-hidden="true">
+            <img src="./assets/block2-icon2.svg" alt="" />
+          </span>
+          <div>
+            <h3>Быстрое внедрение и результат</h3>
+            <p>Достаточно установить агенты на конечные устройства. Без долгих внедрений и выделенных ресурсов.</p>
+          </div>
+        </article>
+        <article class="benefit-item mobile-reveal-item">
+          <span class="benefit-icon" aria-hidden="true">
+            <img src="./assets/block2-icon3.svg" alt="" />
+          </span>
+          <div>
+            <h3>Топ-команда экспертов PT ESC</h3>
+            <p>За плечами более 1000 реальных атак. При сложных инцидентах эксперты подключаются и помогают остановить атаку.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="sequence2-story" id="launchScenario" aria-labelledby="sequence2Title">
+      <div class="sequence2-stage">
+        <canvas class="sequence2-frame" id="sequence2Frame" aria-hidden="true"></canvas>
+        <div class="sequence2-vignette" aria-hidden="true"></div>
+        <div class="sequence2-content" id="sequence2Content">
+          <div class="sequence2-heading sequence2-reveal-item">
+            <h2 id="sequence2Title">Угрозы стали реальностью бизнеса</h2>
+          </div>
+          <div class="sequence2-cards" aria-label="Возможности PT X">
+            <article class="sequence2-card sequence2-reveal-item">
+              <h3>4 часа</h3>
+              <p>В среднем нужно хакеру, чтобы проникнуть в локальную сеть и получить максимальные привилегии</p>
+            </article>
+            <article class="sequence2-card sequence2-reveal-item">
+              <h3>50% атак</h3>
+              <p>Привели к нарушению деятельности компаний в 2025 году</p>
+            </article>
+            <article class="sequence2-card sequence2-reveal-item">
+              <h3>&gt;1 года</h3>
+              <p>Необходимо чтобы организовать SOC, найти бюджет, выстроить процессы и нанять экспертов</p>
+            </article>
+          </div>
+        </div>
+      </div>
+      <div class="sequence2-mobile-flow" aria-labelledby="sequence2MobileTitle">
+        <div class="sequence2-heading sequence2-mobile-reveal-item">
+          <h2 id="sequence2MobileTitle">Угрозы стали реальностью бизнеса</h2>
+        </div>
+        <div class="sequence2-cards" aria-label="Возможности PT X">
+          <article class="sequence2-card sequence2-mobile-reveal-item">
+            <h3>4 часа</h3>
+            <p>В среднем нужно хакеру, чтобы проникнуть в локальную сеть и получить максимальные привилегии</p>
+          </article>
+          <article class="sequence2-card sequence2-mobile-reveal-item">
+            <h3>50% атак</h3>
+            <p>Привели к нарушению деятельности компаний в 2025 году</p>
+          </article>
+          <article class="sequence2-card sequence2-mobile-reveal-item">
+            <h3>&gt;1 года</h3>
+            <p>Необходимо чтобы организовать SOC, найти бюджет, выстроить процессы и нанять экспертов</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="sequence3-story" id="lightTransition" aria-label="Светлая секвенция PT X">
+      <div class="sequence3-stage">
+        <div class="sequence3-light-wash" aria-hidden="true"></div>
+        <canvas class="sequence3-frame" id="sequence3Frame" aria-hidden="true"></canvas>
+      </div>
+    </section>
+
+    <section class="solution-block" id="solutionCards" aria-labelledby="solutionTitle">
+      <div class="solution-inner">
+        <div class="solution-heading">
+          <h2 id="solutionTitle">Решение с PT X</h2>
+          <p>Эффективно отражает кибератаки в компаниях<br />с любым уровнем зрелости ИБ</p>
+          <div class="solution-tabs" aria-label="Сценарии решения">
+            <button class="is-active" type="button">Защита для бизнеса</button>
+            <button type="button">Усиление команды ИБ</button>
+          </div>
+        </div>
+
+        <div class="solution-grid">
+          <article class="solution-card">
+            <div class="solution-card-inner">
+              <div class="solution-card-face solution-card-front">
+                <h3>Быстрое внедрение и результат</h3>
+                <p>Для старта достаточно установить агенты на конечные устройства</p>
+                <img src="./assets/block4/card-img.png" alt="" aria-hidden="true" />
+                <span class="solution-flip-icon" aria-hidden="true">
+                  <img src="./assets/block4/rotation.svg" alt="" />
+                </span>
+              </div>
+              <div class="solution-card-face solution-card-back">
+                <h3>Быстрое внедрение и результат</h3>
+                <p>Для старта достаточно установить агенты на конечные устройства. Без долгого проекта внедрения и сложной настройки инфраструктуры.</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="solution-card">
+            <div class="solution-card-inner">
+              <div class="solution-card-face solution-card-front">
+                <h3>Не требует покупки множества решений</h3>
+                <p>PT X содержит самые необходимые компоненты для обеспечения полноценной защиты бизнеса</p>
+                <img src="./assets/block4/card-img.png" alt="" aria-hidden="true" />
+                <span class="solution-flip-icon" aria-hidden="true">
+                  <img src="./assets/block4/rotation.svg" alt="" />
+                </span>
+              </div>
+              <div class="solution-card-face solution-card-back">
+                <h3>Не требует покупки множества решений</h3>
+                <p>PT X содержит самые необходимые компоненты для обеспечения полноценной защиты бизнеса без сборки сложного набора разрозненных продуктов.</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="solution-card">
+            <div class="solution-card-inner">
+              <div class="solution-card-face solution-card-front">
+                <h3>Без найма ИБ-специалистов</h3>
+                <p>PT X не требует выделения ресурсов, длительного внедрения и выстраивания процедур</p>
+                <img src="./assets/block4/card-img.png" alt="" aria-hidden="true" />
+                <span class="solution-flip-icon" aria-hidden="true">
+                  <img src="./assets/block4/rotation.svg" alt="" />
+                </span>
+              </div>
+              <div class="solution-card-face solution-card-back">
+                <h3>Без найма ИБ-специалистов</h3>
+                <p>PT X не требует выделения ресурсов, длительного внедрения и выстраивания процедур. Экспертиза уже встроена в сервис.</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="solution-card">
+            <div class="solution-card-inner">
+              <div class="solution-card-face solution-card-front">
+                <h3>Бесперебойность бизнеса под защитой</h3>
+                <p>ИИ-технологии и большие языковые модели обеспечивают безопасность вашего бизнеса 24/7</p>
+                <img src="./assets/block4/card-img.png" alt="" aria-hidden="true" />
+                <span class="solution-flip-icon" aria-hidden="true">
+                  <img src="./assets/block4/rotation.svg" alt="" />
+                </span>
+              </div>
+              <div class="solution-card-face solution-card-back">
+                <h3>Бесперебойность бизнеса под защитой</h3>
+                <p>ИИ-технологии и большие языковые модели обеспечивают безопасность вашего бизнеса 24/7 и помогают быстрее реагировать на атаки.</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="solution-card">
+            <div class="solution-card-inner">
+              <div class="solution-card-face solution-card-front">
+                <h3>Защита, которую можно проверить</h3>
+                <p>Следуйте рекомендациям PT X и выходите на кибериспытания. Если белые хакеры реализуют недопустимое событие — мы выплатим им вознаграждение</p>
+                <img src="./assets/block4/card-img.png" alt="" aria-hidden="true" />
+                <span class="solution-flip-icon" aria-hidden="true">
+                  <img src="./assets/block4/rotation.svg" alt="" />
+                </span>
+              </div>
+              <div class="solution-card-face solution-card-back">
+                <h3>Защита, которую можно проверить</h3>
+                <p>Следуйте рекомендациям PT X и выходите на кибериспытания. Если белые хакеры реализуют недопустимое событие — мы выплатим им вознаграждение.</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="solution-card">
+            <div class="solution-card-inner">
+              <div class="solution-card-face solution-card-front">
+                <h3>Оперативная защита, если уже взломали</h3>
+                <p>PT X обеспечит полную защиту от шифровальщиков, вредоносного ПО и использования уязвимостей уже через несколько часов</p>
+                <img src="./assets/block4/card-img.png" alt="" aria-hidden="true" />
+                <span class="solution-flip-icon" aria-hidden="true">
+                  <img src="./assets/block4/rotation.svg" alt="" />
+                </span>
+              </div>
+              <div class="solution-card-face solution-card-back">
+                <h3>Оперативная защита, если уже взломали</h3>
+                <p>PT X обеспечит полную защиту от шифровальщиков, вредоносного ПО и использования уязвимостей уже через несколько часов.</p>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
